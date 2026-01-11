@@ -256,10 +256,4 @@ public class PetHotelApplication {
 
         frame.setVisible(true);
     }
-
-
-
-    public static void main(String[] args) throws SQLException {
-        new PetHotelApplication();
-    }
 }

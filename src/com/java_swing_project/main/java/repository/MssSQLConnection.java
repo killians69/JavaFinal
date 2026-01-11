@@ -8,12 +8,10 @@ public class MssSQLConnection {
         Connection connection = null;
         System.out.println("Connecting to Sql Server.....");
         try {
-            // sửa lại tên phiên local database nếu xung đột
-            // : vd SQLEXPRESS thay cho SQLEXPRESS02
-            String url = "jdbc:sqlserver://localhost\\SQLEXPRESS02;"
+            String url = "jdbc:sqlserver://localhost\\SQLEXPRESS;"
                     + "databaseName=pet_hotel;"
                     + "integratedSecurity=true;"
-                    + "trustServerCertificate=true;";
+                    + "trustServerCertificate=true";
 
             connection = DriverManager.getConnection(url);
             System.out.println("Connected to SQL Server successfully!");
