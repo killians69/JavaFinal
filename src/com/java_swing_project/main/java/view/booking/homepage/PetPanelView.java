@@ -178,7 +178,7 @@ public class PetPanelView {
                         rs.getString("breed"),
                         rs.getString("gender"),
                         rs.getString("healthStatus"),
-                        rs.getString("customer_name"), // 👈 TÊN CHỦ
+                        rs.getString("customer_name"), 
                         rs.getInt("age")
                 });
             }
